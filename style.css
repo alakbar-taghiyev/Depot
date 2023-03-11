@@ -1,0 +1,35 @@
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.header__top-left {
+    display: flex;
+    gap: 30px;
+}
+.header__top-left a:hover {
+    color: goldenrod;
+}
+.header__top-center {
+    font-size: 30px;
+    font-weight: 600;
+}
+.header__top-right {
+    display: flex;
+    gap: 30px;
+}
+.header__top-right a:hover {
+    color: goldenrod;
+}
+.header__top-right:nth-child(3) i {
+    margin-right: 7px;
+}
+.active {
+    color: goldenrod;
+}
