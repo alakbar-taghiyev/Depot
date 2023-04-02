@@ -1,0 +1,134 @@
+@import url("/css/footer.css");
+
+/* Header section start */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 6;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__left {
+  font-size: 30px;
+  font-weight: 600;
+}
+.nav__left a:hover {
+  color: goldenrod;
+}
+.nav__center {
+  display: flex;
+  gap: 30px;
+}
+.nav__right {
+  display: flex;
+  gap: 30px;
+}
+.nav__right a:hover {
+  color: goldenrod;
+}
+.nav__right:nth-child(3) i {
+  margin-right: 7px;
+}
+.active {
+  color: goldenrod;
+}
+
+/* Header section end */
+
+/* serviceFrame section start */
+
+#serviceFrame {
+  background-image: url("../img/serviceFrame.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.serviceFrame__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* serviceFrame section end */
+
+/* serviceMain section start */
+
+.services {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 30px;
+}
+#serviceMain {
+  padding: 40px 0;
+}
+.serviceMain__left {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  justify-content: center;
+  gap: 60px;
+}
+.serviceItem__left {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.serviceItem__left i {
+  font-size: 25px;
+}
+.serviceMain__center {
+  width: 100%;
+}
+.serviceMain__center img {
+  width: 100%;
+}
+.serviceItem__left-content h3 {
+  text-transform: uppercase;
+}
+.serviceMain__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 60px;
+}
+.serviceItem__right {
+  display: flex;
+  gap: 10px;
+}
+.serviceItem__right i {
+  font-size: 25px;
+}
+.serviceItem__right-content h3 {
+  text-transform: uppercase;
+}
+/* serviceMain section start */
+
+/* serviceFooter section start */
+
+#serviceFooter {
+  background-color: black;
+}
+#serviceFooter * {
+  color: white;
+}
+/* serviceFooter section end */

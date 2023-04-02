@@ -1,0 +1,172 @@
+@import url(./footer.css);
+
+/* Header section start */
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 6;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__left {
+  font-size: 30px;
+  font-weight: 600;
+}
+.nav__left a:hover {
+  color: goldenrod;
+}
+.nav__center {
+  display: flex;
+  gap: 30px;
+}
+.nav__right {
+  display: flex;
+  gap: 30px;
+}
+.nav__right a:hover {
+  color: goldenrod;
+}
+.nav__right:nth-child(3) i {
+  margin-right: 7px;
+}
+.active {
+  color: goldenrod;
+}
+
+/* Header section end */
+
+/* Backstage section start */
+
+#backstage {
+  background-image: url("../img/backstage.jpg");
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.backstage__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+/* Backstage section end */
+
+/* Depot store section start */
+
+#depotStore {
+  padding: 70px;
+}
+
+.dptStore {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.dptStore__img img {
+  width: 100%;
+}
+
+.dptStore__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.content__title {
+  display: flex;
+  gap: 20px;
+}
+
+.content__title button {
+  text-transform: uppercase;
+}
+
+.dptStore__content p {
+  color: #929292;
+  text-align: justify;
+}
+
+.dptStore__content a {
+  color: #929292;
+  font-weight: bold;
+}
+
+.dptStore__content i {
+  margin-left: 5px;
+}
+
+.dptStore__content a:hover {
+  color: black;
+}
+
+/* Depot store section end */
+
+/* aboutSlider section start */
+
+#aboutSlider {
+  background-color: #f7f6f6;
+  padding: 50px 0;
+}
+
+.abtSlideContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 30px;
+}
+
+.abtSlideContent h1 {
+  text-transform: uppercase;
+}
+
+.abtSlideContent p {
+  margin: 0 auto;
+  width: 60%;
+}
+
+.author {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.author span:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+/* aboutSlider section start */
+
+/* aboutFooter section start */
+
+#aboutFooter {
+  background-color: black;
+}
+#aboutFooter * {
+  color: white;
+}
+
+/* aboutFooter section end */

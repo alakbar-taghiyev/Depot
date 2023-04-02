@@ -1,0 +1,182 @@
+@import url(./footer.css);
+
+/* Header section start */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  z-index: 6;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__left {
+  display: flex;
+  gap: 30px;
+}
+.nav__left a:hover {
+  color: goldenrod;
+}
+.nav__center {
+  font-size: 30px;
+  font-weight: 600;
+}
+.nav__right {
+  display: flex;
+  gap: 30px;
+}
+.nav__right a:hover {
+  color: goldenrod;
+}
+.nav__right:nth-child(3) i {
+  margin-right: 7px;
+}
+.active {
+  color: goldenrod;
+}
+/* Header section start */
+
+/* homeSlider section start */
+
+.homeSlider {
+    width: 1600px;
+    /* overflow: hidden; */
+    margin: 50px auto;
+    background-color: rgb(207, 206, 206);
+    position: relative;
+}
+.homeSlider__wrapper {
+    position: relative;
+}
+.homeSlider__inner {
+    display: flex;
+}
+.homeSlider__context {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    padding-bottom: 50px;
+    line-height: 2;
+}
+.homeSlider__context h1 {
+    text-transform: uppercase;
+}
+.homeSlider__item {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.homeSlider__item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.homeSlider__control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 50px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+/* homeSlider section end */
+
+/* depotTable section start */
+
+.mainTitle {
+    display: flex;
+    font-size: 18px;
+    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.main_list {
+    display: flex;
+    gap: 20px;
+}
+.main_list li:hover a {
+    font-weight: 600;
+}
+.filterTab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.filterTab i {
+    margin-left: 5px;
+}
+.mainTable {
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    cursor: pointer;
+}
+.table__item {
+    width: 100%;
+}
+.table__item img{
+    width: 100%;
+    object-fit: cover;
+}
+.table__img {
+    position: relative;
+}
+.table__item .title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+}
+.table__item .caption {
+    text-align: center;
+    background-color: rgb(52, 46, 46);
+    color: white;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    display: none;
+    position: absolute;
+    bottom: 4.5px;
+    left: 25%;
+}
+.table__item .caption p {
+    padding: 5px;
+    flex-grow: 1;
+}
+.table__item .caption i{
+    background-color: gray;
+    padding: 6px 3px;
+    flex-grow: 1;
+}
+.table__item:hover .caption {
+    display: flex;
+    transition: all 9s;
+}
+.table__content {
+    text-align: center;
+    padding-top: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* depotTable section end */
