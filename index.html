@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,15 +12,27 @@
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <nav>
             <div class="container">
                 <div class="nav__left">
-                    <a href="#" class="active">Home</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Pages</a>
-                    <a href="#">Elements</a>
+                    <ul class="dropdownUl">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropbtn" href="#">Pages <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown">
+                                    <a href="#">About Us</a>
+                                    <a href="#">Contact Us</a>
+                                    <a href="#">Our Services</a>
+                                    <a href="#">Our Team</a>
+                                </ul>
+                        </li>
+                        <li><a href="#">Elements</a></li>
+                    </ul>
                 </div>
                 <div class="nav__center">Depot</div>
                 <div class="nav__right">
@@ -77,6 +90,9 @@
                     <li><a href="#">Vases</a></li>
                     <li><a href="#">Basics</a></li>
                 </ul>
+                <div class="table__search">
+                    <input type="text"><button class="btn btn-search" onclick="searchData()">Search</button>
+                </div>
                 <div class="filterTab"><a href="#">Filter<i class="fa-solid fa-angle-down"></i></a></div>
             </div>
             <div class="mainTable">
@@ -87,7 +103,7 @@
                             <p>New</p>
                         </div>
                         <div class="caption">
-                            <p>Quick look</p>
+                            <button class="lookBtn">Quick look</button>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
@@ -104,7 +120,7 @@
                             <p>-19%</p>
                         </div>
                         <div class="caption">
-                            <p>Quick look</p>
+                            <button class="lookBtn">Quick look</button>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
@@ -117,7 +133,7 @@
                     <div class="table__img">
                         <img src="/img/table.jpg" alt="">
                         <div class="caption">
-                            <p>Quick look</p>
+                            <button class="lookBtn">Quick look</button>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
@@ -133,7 +149,7 @@
                             <p>New</p>
                         </div>
                         <div class="caption">
-                            <p>Quick look</p>
+                            <button class="lookBtn">Quick look</button>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
@@ -146,7 +162,7 @@
                     <div class="table__img">
                         <img src="/img/table2.jpg" alt="">
                         <div class="caption">
-                            <p>Quick look</p>
+                            <button class="lookBtn">Quick look</button>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
@@ -159,7 +175,7 @@
                     <div class="table__img">
                         <img src="/img/basket.jpg" alt="">
                         <div class="caption">
-                            <p>Quick look</p>
+                            <button class="lookBtn">Quick look</button>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
@@ -176,7 +192,7 @@
                             <p>-20%</p>
                         </div>
                         <div class="caption">
-                            <p>Quick look</p>
+                            <button class="lookBtn">Quick look</button>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
@@ -192,7 +208,7 @@
                             <p>New</p>
                         </div>
                         <div class="caption">
-                            <p>Quick look</p>
+                            <button class="lookBtn">Quick look</button>
                             <i class="fa-solid fa-heart"></i>
                         </div>
                     </div>
@@ -204,7 +220,6 @@
             </div>
         </div>
     </main>
-
     <footer>
         <div class="container">
             <div class="footer__items">
@@ -260,8 +275,95 @@
             </div>
         </div>
     </footer>
-
-    <script src="/slider.js"></script>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__close">&times;</div>
+                <div class="modal__img">
+                    <img src="./img/clock.jpg" alt="">
+                </div>
+                <div class="modal__theme">
+                    <h2>wall clock</h2>
+                    <span>$110</span>
+                    <span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </span>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti aut adipisci delectus
+                        quidem nulla tempora sed modi nisi iste ut, laborum dignissimos earum explicabo impedit unde
+                        corporis optio doloribus!
+                    </p>
+                    <div class="addingCart">
+                        <div class="quantity">
+                            <span>quantitiy</span>
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            1
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </div>
+                        <button>add to cart</button>
+                    </div>
+                    <div class="wishList">
+                        <i class="fa-solid fa-heart"></i>
+                        <span>add to wishList</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modalSideMenu">
+        <div class="sideMenu">
+            <div class="sideArea__inner">
+                <div class="modal__close">&times;</div>
+                <div class="sideAre__title">
+                    <h6>welcome</h6>
+                    <p>Advertising is the way great brands get to be great brands.</p>
+                </div>
+                <div class="sideArea__content">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="/img/sideMenu_1.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/img/sideMenu_2.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/img/sideMenu_3.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/img/sideMenu_4.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/img/sideMenu_5.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/img/sideMenu_6.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/img/sideMenu_7.jpg" alt=""></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="/img/sideMenu_8.jpg" alt=""></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sideAre__bottom">
+                <p>we are awesome follow us</p>
+                <div class="social__links">
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/modules/modal.js"></script>
+    <script src="./js/modules/sideMenu.js"></script>
+    <script src="./js/modules/searchValue.js"></script>
 </body>
 
 </html>

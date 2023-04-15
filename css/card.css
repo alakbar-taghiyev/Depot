@@ -51,7 +51,7 @@ nav .container {
 /* Backstage section start */
 
 #backstage {
-  background-image: url("../img/backstage.jpg");
+  background-image: url("../img/card.jpg");
   height: 30vh;
   background-repeat: no-repeat;
   background-position: top;
@@ -71,106 +71,115 @@ nav .container {
 
 /* Backstage section end */
 
-/* Depot store section start */
-
-#depotStore {
-  padding: 70px;
+#card {
+  padding: 100px 0;
 }
-
-.dptStore {
+.shoppingCard {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 20px;
 }
-
-.dptStore__img img {
-  width: 100%;
-}
-
-.dptStore__content {
+.main__content {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-}
-
-.content__title {
-  display: flex;
-  gap: 20px;
-}
-
-.content__title button {
-  text-transform: uppercase;
-}
-
-.dptStore__content p {
-  color: #929292;
-  text-align: justify;
-}
-
-.dptStore__content a {
-  color: #929292;
-  font-weight: bold;
-}
-
-.dptStore__content i {
-  margin-left: 5px;
-}
-
-.dptStore__content a:hover {
-  color: black;
-}
-
-/* Depot store section end */
-
-/* aboutSlider section start */
-
-#aboutSlider {
-  background-color: #f7f6f6;
-  padding: 50px 0;
-}
-
-.abtSlideContent {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
   gap: 30px;
 }
-
-.abtSlideContent h1 {
+.main__content h3 {
   text-transform: uppercase;
 }
-
-.abtSlideContent p {
-  margin: 0 auto;
-  width: 60%;
-}
-
-.author {
+.cardDetail {
   display: flex;
-  justify-content: center;
-  flex-direction: column;
-  gap: 10px;
+  gap: 50px;
+  align-items: center;
 }
-
-.author span:first-child {
+.cardDetail img {
+  width: 10%;
+}
+.cardDetail h4 {
   text-transform: uppercase;
-  font-weight: bold;
-  letter-spacing: 5px;
 }
+.cardDetail .quantity {
+  border: 1px solid gray;
+  padding: 10px;
+}
+.quantity span {
+  margin-right: 20px;
+}
+.cardDetailBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  width: 100%;
+}
+.main__content button {
+  margin: 0;
+  border: none;
+  outline: none;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+.main__content button.update {
+  background-color: white;
+}
+.main__content a {
+  text-transform: capitalize;
+}
+.main__content a i {
+  margin-right: 10px;
+}
+.main__card {
+  background-color: #fafafa;
+  padding: 40px;
+}
+.main__card h3 {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+.totals__main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.totals__main label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.subtotal {
+  display: flex;
+  gap: 30px;
+}
+.shipping {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.totals__main input {
+  display: inline-block;
+}
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+.totals__main button {
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+}
+/* cardFooter section start */
 
-/* aboutSlider section start */
-
-/* aboutFooter section start */
-
-#aboutFooter {
+#cardFooter {
   background-color: black;
 }
-#aboutFooter * {
+#cardFooter * {
   color: white;
 }
-
-/* aboutFooter section end */
-
 .sideMenu {
   position: fixed;
   top: 0;
@@ -249,3 +258,4 @@ nav .container {
   transition: all 0.6s ease;
   cursor: pointer;
 }
+/* cardFooter section end */

@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Contact US</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/card.css">
 </head>
 
 <body>
@@ -34,58 +34,64 @@
             </div>
         </nav>
     </header>
-    <section id="map">
-        <div class="container">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3038.1334948916815!2d49.84597861570595!3d40.40589336422186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d40ddda360b%3A0xb98c909760eb076a!2zxLBubm92YXNpeWEgdsmZIFLJmXHJmW1zYWwgxLBua2nFn2FmIEFnZW50bGl5aQ!5e0!3m2!1sen!2saz!4v1679774295436!5m2!1sen!2saz"
-                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <section id="backstage">
+        <div class="backstage__title">
+            <h1>Cart</h1>
         </div>
     </section>
-    <section id="dptStore">
+    <main id="card">
         <div class="container">
-            <div class="store__items">
-                <div class="store__item">
-                    <div class="checked"><i class="fa-regular fa-circle-check"></i></div>
-                    <div class="store__content">
-                        <h3>Paris store</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatum saepe, rem atque quis
-                            iusto illo officia minus minima id veniam.</p>
+            <div class="shoppingCard">
+                <div class="main__content">
+                    <h3>shopping cart</h3>
+                    <div class="cardDetail">
+                        <i class="fa-solid fa-xmark"></i>
+                        <img src="./img/teable3.jpg" alt="">
+                        <h4>table lamp</h4>
+                        <span>$240</span>
+                        <div class="quantity">
+                            <span>quantitiy</span>
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            1
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </div>
+                        <span>$240</span>
                     </div>
-                </div>
-                <div class="store__item">
-                    <div class="checked"><i class="fa-regular fa-circle-check"></i></div>
-                    <div class="store__content">
-                        <h3>Madrid store</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatum saepe, rem atque quis
-                            iusto illo officia minus minima id veniam.</p>
+                    <div class="cardDetailBtn">
+                        <button class="apply">apply coupon</button>
+                        <button class="update">update cart</button>
                     </div>
+                    <a href="#"><i class="fa-solid fa-arrow-left"></i>go back shopping</a>
                 </div>
-                <div class="store__item">
-                    <div class="checked"><i class="fa-regular fa-circle-check"></i></div>
-                    <div class="store__content">
-                        <h3>Berlin store</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatum saepe, rem atque quis
-                            iusto illo officia minus minima id veniam.</p>
+                <div class="main__card">
+                    <h3>cart totals</h3>
+                    <div class="totals__main">
+                        <div class="subtotal">
+                            <label for="">subtotal</label>
+                            <span>$240</span>
+                        </div>
+                        <div class="shipping">
+                            <label for="shiping">shipping</label>
+                            <div class="shippingInpt">
+                                <input id="shiping" name="shiping" type="radio"> free shiping <br>
+                                <input id="shiping" name="shiping" type="radio"> local pickup <br>
+                                <input id="shiping" name="shiping" type="radio"> flat rate: $10 <br>
+                                <span>Shipping to Azerbaijan.</span> <br>
+                                <span>change address <i class="fa-solid fa-angle-down"></i></span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="total">
+                            <h4>total</h4>
+                            <h2>$240</h2>
+                        </div>
+                        <button>proceed to Checkout</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="subscribe">
-        <div class="container">
-            <div class="subscribe__content">
-                <h2>Subscribe to newsletter</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab consequuntur culpa pariatur quia ratione
-                </p>
-                <div class="mailHolder">
-                    <input type="text" autofocus placeholder="Email Adress">
-                    <button type="submit">Subscribe</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <footer id="contactFooter">
+    </main>
+    <footer id="cardFooter">
         <div class="container">
             <div class="footer__items">
                 <div class="footer__item">
@@ -140,7 +146,7 @@
             </div>
         </div>
     </footer>
-    <div class="modal">
+    <div class="modalSideMenu">
         <div class="sideMenu">
             <div class="sideArea__inner">
                 <div class="modal__close">&times;</div>
@@ -151,7 +157,7 @@
                 <div class="sideArea__content">
                     <ul>
                         <li>
-                            <a href="#"><img src="/img/sideMenu_1.jpg" alt=""></a>
+                            <a href="#"><img src="./img/sideMenu_1.jpg" alt=""></a>
                         </li>
                         <li>
                             <a href="#"><img src="/img/sideMenu_2.jpg" alt=""></a>
