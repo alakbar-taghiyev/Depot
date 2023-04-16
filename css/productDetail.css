@@ -1,0 +1,154 @@
+@import url(./footer.css);
+
+/* Header section start */
+
+nav {
+  /*   position: fixed;
+  top: 0;
+  width: 100%; */
+  padding: 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  /*   z-index: 6;
+  top: 0;
+  width: 100%; */
+  overflow: hidden;
+  background-color: white;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__left {
+  font-size: 30px;
+  font-weight: 600;
+}
+.nav__left a:hover {
+  color: goldenrod;
+}
+.dropdownUl {
+  list-style: none;
+}
+.dropdownUl li a {
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+}
+.dropdownUl li ul.dropdown {
+  width: 12%;
+  background-color: #22438c;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.dropdownUl li a:hover {
+  background-color: #112c66;
+}
+.dropdownUl li:hover ul.dropdown {
+  display: block;
+}
+.dropdown__content a {
+  text-decoration: none;
+  color: white;
+}
+.nav__center ul {
+  display: flex;
+}
+.nav__right {
+  display: flex;
+  gap: 30px;
+}
+.nav__center a:hover {
+  color: goldenrod;
+}
+.nav__right:nth-child(3) i {
+  margin-right: 7px;
+}
+.active {
+  color: goldenrod;
+}
+
+/* Header section end */
+
+/* Main section start */
+
+.product__dialog {
+  width: 50%;
+  margin: 40px auto;
+  background-color: white;
+}
+.product__content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.product__img img {
+  width: 100%;
+}
+.product__theme {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  padding: 0 25px;
+}
+.product__theme h2 {
+  text-transform: uppercase;
+}
+.addingCart {
+  border: 1px solid gray;
+}
+.addingCart .quantity {
+  padding: 10px;
+  width: 100%;
+}
+.quantity span {
+  margin-right: 10px;
+}
+.addingCart button {
+  padding: 10px 20px;
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.addingCart {
+  display: flex;
+}
+.wishList span {
+  text-transform: uppercase;
+}
+.product__dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.product__descripton {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.product__title button {
+    text-transform: uppercase;
+}
+.product__detail {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product__detail h3 {
+    text-transform: uppercase;
+}
+.product__detail form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product__detail form label {
+    text-transform: capitalize;
+}
+/* Main section start */

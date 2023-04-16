@@ -28,15 +28,39 @@ nav .container {
 .nav__left a:hover {
   color: goldenrod;
 }
-.nav__center {
+.dropdownUl {
+  list-style: none;
+}
+.dropdownUl li a {
+  display: block;
+  padding: 20px 25px;
+  text-decoration: none;
+}
+.dropdownUl li ul.dropdown {
+  width: 12%;
+  background-color: #22438c;
+  position: absolute;
+  z-index: 999;
+  display: none;
+}
+.dropdownUl li a:hover {
+  background-color: #112c66;
+}
+.dropdownUl li:hover ul.dropdown {
+  display: block;
+}
+.dropdown__content a {
+  text-decoration: none;
+  color: white;
+}
+.nav__center ul {
   display: flex;
-  gap: 30px;
 }
 .nav__right {
   display: flex;
   gap: 30px;
 }
-.nav__right a:hover {
+.nav__center a:hover {
   color: goldenrod;
 }
 .nav__right:nth-child(3) i {

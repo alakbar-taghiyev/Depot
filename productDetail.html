@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProdcutDetail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="./css/productDetail.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="nav__left">Depot</div>
+                <div class="nav__center">
+                    <ul class="dropdownUl">
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropbtn" aria-colspan="active" href="#">Pages <i
+                                        class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown">
+                                    <a href="./aboutUs.html">About Us</a>
+                                    <a href="./contact.html">Contact Us</a>
+                                    <a href="./ourServices.html">Our Services</a>
+                                    <a href="./ourTeam.html">Our Team</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Elements</a></li>
+                    </ul>
+                </div>
+                <div class="nav__right">
+                    <a href="#">Cart ($0)</a>
+                    <a href="#"><i class="fa-regular fa-heart"></i> (0)</a>
+                    <a href="#" onclick="sideMenu()"><i class="fa-solid fa-bars"></i></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="product">
+            <div class="product__dialog">
+                <div class="product__content">
+                    <div class="product__img">
+                        <img src="./img/clock.jpg" alt="">
+                    </div>
+                    <div class="product__theme">
+                        <h2>wall clock</h2>
+                        <span>$110</span>
+                        <span>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat corrupti aut adipisci
+                            delectus
+                            quidem nulla tempora sed modi nisi iste ut, laborum dignissimos earum explicabo impedit unde
+                            corporis optio doloribus!
+                        </p>
+                        <div class="addingCart">
+                            <div class="quantity">
+                                <span>quantitiy</span>
+                                <i class="fa-solid fa-circle-arrow-left"></i>
+                                1
+                                <i class="fa-solid fa-circle-arrow-right"></i>
+                            </div>
+                            <button>add to cart</button>
+                        </div>
+                        <div class="wishList">
+                            <i class="fa-solid fa-heart"></i>
+                            <span>add to wishList</span>
+                        </div>
+                        <div class="description">
+                            <p>SKU: 006</p>
+                            <p>Categories: Basics, Home Decor</p>
+                            <p>Tags: Decoration, Modem</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="product__descripton">
+                    <div class="product__title">
+                        <button class="btn btn-active">decsription</button>
+                        <button class="btn">additional information</button>
+                        <button class="btn">reviews</button>
+                    </div>
+                    <div class="product__detail">
+                        <h3>description</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et aperiam alias incidunt
+                            blanditiis doloremque distinctio dicta, officiis provident neque explicabo doloribus,
+                            laudantium fuga ex error impedit maiores totam culpa voluptatum.</p>
+                    </div>
+                    <div class="product__detail">
+                        <h3>additional information</h3>
+                        <div class="addInfo">
+                            <p>Weight: 2kg</p>
+                            <p>Dimensions: 10 x 10 x 15 cm</p>
+                            <p>Color: Beige</p>
+                            <p>Material: Wood</p>
+                        </div>
+                    </div>
+                    <div class="product__detail">
+                        <form action="#">
+                            <label for="">your review</label>
+                            <textarea required name="" id="" cols="30" rows="10"></textarea>
+                            <label for="">name</label>
+                            <input required type="text">
+                            <label for="">email</label>
+                            <input required type="text">
+                            <button class="btn" style="background-color: black; color: white;" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="./js/modules/product__tab.js"></script>
+</body>
+
+</html>

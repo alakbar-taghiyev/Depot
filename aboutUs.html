@@ -19,12 +19,24 @@
             <div class="container">
                 <div class="nav__left">Depot</div>
                 <div class="nav__center">
-                    <a href="#">Home</a>
-                    <a href="#" class="active">Pages</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Portfolio</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Elements</a>
+                    <ul class="dropdownUl">
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a class="dropbtn" aria-colspan="active" href="#">Pages <i class="fas fa-caret-down"></i></a>
+                                <ul class="dropdown">
+                                    <a href="./aboutUs.html">About Us</a>
+                                    <a href="./contact.html">Contact Us</a>
+                                    <a href="./ourServices.html">Our Services</a>
+                                    <a href="./ourTeam.html">Our Team</a>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Elements</a></li>
+                    </ul>
                 </div>
                 <div class="nav__right">
                     <a href="#">Cart ($0)</a>
